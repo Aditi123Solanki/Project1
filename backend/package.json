@@ -1,0 +1,26 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "this my backend learning ",
+  "keywords": [
+    "git",
+    "backend",
+    "javascript",
+    "node"
+  ],
+  "homepage": "https://github.com/Aditi123Solanki/Project1#readme",
+  "bugs": {
+    "url": "https://github.com/Aditi123Solanki/Project1/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Aditi123Solanki/Project1.git"
+  },
+  "license": "ISC",
+  "author": "Aditi Solanki",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
