@@ -25,7 +25,7 @@ const userShcema = new mongoose.Schema(
       trim: true,
       index: true,
     },
-    avtar: {
+    avatar: {
       type: String, //cloudinary url
       required: true,
     },
@@ -46,13 +46,13 @@ const userShcema = new mongoose.Schema(
       type: String,
     },
   },
-  { timestamps: ture }
+  { timestamps: true }
 );
 
 userShcema.pre("save", async function (next) {
   // advised not to use arrow funtion as we need to know the context
   if (!this.isModified("password")) return next();
-  this.password = bcrypt.hash(this.password, 10);
+  this.password = await bcrypt.hash(this.password, 10);
   next();
 });
 
